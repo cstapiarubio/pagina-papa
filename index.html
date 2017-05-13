@@ -5,20 +5,26 @@
 	<title>Gásfiter experto</title>
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Artifika|Open+Sans" rel="stylesheet">
-	<link rel="stylesheet" href="flexslider.css" type="text/css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<script src="assets/js/jquery.flexslider.js"></script>
+<script type="text/javascript">
+  $(window).load(function() {
+    $('.flexslider').flexslider();
+  });
+</script>
 </head>
 
-<body background="assets/img/beige-tiles.jpg">
+<body background="assets/img/blanco.jpg">
 <header>
 <div style="text-align:center;">
 <div class="container">
   <div class="div-img">
     <img class="img" src="assets/img/gasfiter.jpg" width=1260px height=280px  alt="Foto10">
-    <div class="text">¡Contáctanos al 962769417!</div>
+    <div class="text">¡Contáctanos al 962769417!</br></div>
   </div>
 </div>
 </div>
-<div id="parrafo-init"><h1><strong>Contamos con 30 años de experiencia en el área de gasfitería, electricidad y construcción en general</strong></h1></div>
+<br><div id="parrafo-init"><h1><strong>Contamos con 30 años de experiencia en el área de gasfitería, electricidad y construcción en general</strong></h1></div></br>
 </header>
 
 <nav>
@@ -35,7 +41,7 @@
 </div>
 
 <div class="flexslider">
-<h1>Proyectos realizados</h1>
+<br><h1>Proyectos realizados</h1>
 	<ul class="slides">
 	<li>
 		<img src="assets/img/beige-tiles.jpg" alt="">
@@ -63,8 +69,6 @@
 	</li>
 	</ul>
 </div>
-<button id= "historia1" onclick="">ver más</button> 
-<button id = "historia2" onclick="">ver más</button>
 </nav>
 
 <div id="pie-pag"><h1><br>Contáctanos</br></h1>
@@ -74,12 +78,5 @@
 </div>
 
 <script src="assets/js/main.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-<script src="jquery.flexslider.js"></script>
-<script type="text/javascript">
-  $(window).load(function() {
-    $('.flexslider').flexslider();
-  });
-</script>
 </body>
 </html>

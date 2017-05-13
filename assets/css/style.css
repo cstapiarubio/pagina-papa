@@ -1,6 +1,8 @@
 *{
 	font-family: 'Artifika', serif;
 	text-align: center;	
+	margin:0;
+	padding:0;
 }
 
 
@@ -8,41 +10,136 @@ h1{
 	font-size: 206%;
 }
 
-#texto ul li, #pie-pag p{
+#texto ul li, 
+#pie-pag p,
+.flex-caption p{
 	font-size: 169%;
 }
 
-#pie-pag, #parrafo-init{
+#pie-pag, 
+#parrafo-init
+{
 	background-color: #EEE0B8;
 }
 
-.text{
+.text,
+.flex-caption p{
 	background-color: #EC8263;
 }
 
-button{
-border:1px solid #d7dada; -webkit-border-radius: 3px; 
--moz-border-radius: 3px;border-radius: 3px;font-size:12px;
-font-family:arial, helvetica, sans-serif;
- padding: 10px 10px 10px 10px; 
-text-decoration:none; display:inline-block;font-weight:bold; color: #000000;
- background-color: #f4f5f5; background-image: -webkit-gradient(linear, left top, left bottom, from(#f4f5f5), to(#dfdddd));
- background-image: -webkit-linear-gradient(top, #f4f5f5, #dfdddd);
- background-image: -moz-linear-gradient(top, #f4f5f5, #dfdddd);
- background-image: -ms-linear-gradient(top, #f4f5f5, #dfdddd);
- background-image: -o-linear-gradient(top, #f4f5f5, #dfdddd);
- background-image: linear-gradient(to bottom, #f4f5f5, #dfdddd);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#f4f5f5, endColorstr=#dfdddd);
+/*Diseño del slider(imagenes con reseña que se van desplazando*/
+
+#font-face {
+	font-family: 'flexslider-icon';
+	src: url('fonts/flexslider-icon.eot');
+	src:url('fonts/flexslider-icon.eot?#iefix') format('embedded-opentype'), url('fonts/flexslider-icon.woff')
+     format('woff'), url('fonts/flexslider-icon.ttf') format('truetype'), url('fonts/flexslider-icon.svg#flexslider-icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 
-button:hover{
- border:1px solid #bfc4c4;
- background-color: #d9dddd; background-image: -webkit-gradient(linear, left top, left bottom, from(#d9dddd), to(#c6c3c3));
- background-image: -webkit-linear-gradient(top, #d9dddd, #c6c3c3);
- background-image: -moz-linear-gradient(top, #d9dddd, #c6c3c3);
- background-image: -ms-linear-gradient(top, #d9dddd, #c6c3c3);
- background-image: -o-linear-gradient(top, #d9dddd, #c6c3c3);
- background-image: linear-gradient(to bottom, #d9dddd, #c6c3c3);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#d9dddd, endColorstr=#c6c3c3);
+.flexslider{
+	width: 100%;
+	position: relative;
 }
+.slides{
+	overflow: hidden;
+}
+
+.slides img{
+	width:100%;
+}
+
+.slides,
+.flex-control-nav,
+.flex-direction-nav{
+	margin:0;
+	padding: 0;
+	list-style: none;
+}
+
+.flex-control-nav{
+	width: 100%;
+	text-align: center;
+}
+
+.flex-control-nav li{
+	display: inline-block;
+	margin: 0 6px;
+}
+
+.flex-control-nav li a{
+	display: block;
+	background: #666666;
+	width: 12px;
+	height: 12px;
+	border-radius: 12px;
+	text-indent: -9999px;
+}
+
+.flex-control-nav li a: hover{
+	background: #2e2e2e;
+}
+
+.flex-control-nav li a.flex-active{
+	background: #2e2e2e;
+}
+
+.flex-direction-nav a{
+	display: block;
+	text-decoration: none;
+	position: absolute;
+	top:50%;
+	z-index: 999;
+	width: 40px;
+	height: 40px;
+	overflow: hidden;
+	opacity: 0;
+	-webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.flex-direction-nav .flex-prev{
+	left: 0;
+}
+
+.flex-direction-nav .flex-next{
+	right: 0;
+}
+
+.flex-direction-nav a:before {
+  font-family: "flexslider-icon";
+  font-size: 40px;
+  display: inline-block;
+  content: '\f001';
+  color: #fff;
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
+}
+.flex-direction-nav a.flex-next:before {
+  content: '\f002';
+}
+
+.flexslider:hover .flex-direction-nav .flex-prev{
+	opacity: 0.7;
+	left: 10px;
+}
+
+.flexslider:hover .flex-direction-nav .flex-prev:hover{
+	opacity: 1;
+}
+
+.flexslider:hover .flex-direction-nav .flex-next{
+	opacity: 0.7;
+	right: 10px;
+}
+
+.flexslider:hover .flex-direction-nav .flex-next:hover{
+	opacity: 1;
+}
+
 
 
 /*Diseño de fotografía cabecera que al pasar el puntero se achica en circulo y muestra el contacto*/
