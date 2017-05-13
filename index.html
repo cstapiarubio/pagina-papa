@@ -4,19 +4,26 @@
     <meta charset="utf-8">
 	<title>Gásfiter experto</title>
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Artifika|Open+Sans" rel="stylesheet">
+	<link rel="stylesheet" href="flexslider.css" type="text/css">
 </head>
-<body>
 
+<body background="assets/img/beige-tiles.jpg">
 <header>
 <div style="text-align:center;">
-<img src="assets/img/gasfiter.jpg" width=460px height=220px alt="gasfiter"></div>
-<p><strong>Contamos con 30 años de experiencia en el área de gasfitería, electricidad y construcción en general</strong></p>
+<div class="container">
+  <div class="div-img">
+    <img class="img" src="assets/img/gasfiter.jpg" width=1260px height=280px  alt="Foto10">
+    <div class="text">¡Contáctanos al 962769417!</div>
+  </div>
+</div>
+</div>
+<div id="parrafo-init"><h1><strong>Contamos con 30 años de experiencia en el área de gasfitería, electricidad y construcción en general</strong></h1></div>
 </header>
 
 <nav>
-
 <div id="texto">
-<ul><br>Somos expertos en: </br>
+<ul><h1><br>Somos expertos en: </br></h1>
 <li>Instalación de cerámica, porcelanatos y piso flotante</li>
 <li>Arreglo y mantención de calefonts</li>
 <li>Construcción de techumbres con tejas asfálticas</li>
@@ -25,18 +32,54 @@
 <li>Construcción de radiers</li>
 <li>Montaje de paneles para equipos termosolares</li>
 </ul>
+</div>
 
+<div class="flexslider">
 <h1>Proyectos realizados</h1>
+	<ul class="slides">
+	<li>
+		<img src="assets/img/beige-tiles.jpg" alt="">
+		<section class="flex-caption"><p></p></section>
+	</li>
+    <li>
+		<img src="assets/img/ladrillo1.jpg" alt="">
+		<section class="flex-caption"><p>Reseña</p></section>
+	</li>
+	<li>
+		<img src="assets/img/sanitario.jpg" alt="">
+		<section class="flex-caption"><p>Reseña</p></section>
+	</li>	
+	<li>
+		<img src="assets/img/surcos.jpg" alt="">
+		<section class="flex-caption"><p>Reseña</p></section>
+	</li>
+	<li>
+		<img src="assets/img/ceramica.jpg" alt="">
+		<section class="flex-caption"><p>Reseña</p></section>
+	</li>
+	<li>
+		<img src="assets/img/ladrillo.jpg" alt="">
+		<section class="flex-caption"><p>Reseña</p></section>
+	</li>
+	</ul>
+</div>
 <button id= "historia1" onclick="">ver más</button> 
 <button id = "historia2" onclick="">ver más</button>
 </nav>
 
-<h2><br>Contáctanos</br></h2>
+<div id="pie-pag"><h1><br>Contáctanos</br></h1>
 <p>Consulta y cotiza con nosotros
 <strong><br>Mail: </strong> cstapiarubio@gmail.com </br>
 <strong>Teléfonos: </strong> 962769417/978005241</p>
 </div>
 
 <script src="assets/js/main.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<script src="jquery.flexslider.js"></script>
+<script type="text/javascript">
+  $(window).load(function() {
+    $('.flexslider').flexslider();
+  });
+</script>
 </body>
 </html>
