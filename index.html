@@ -1,47 +1,136 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
+	<meta charset="utf-8">
 	<title>Gásfiter experto</title>
 	<!-- fonts google-->
 	<link href="https://fonts.googleapis.com/css?family=Artifika|Open+Sans" rel="stylesheet">
 	<!-- CSS-->
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<!-- CDN bootstrap css-->
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-<script src="assets/js/jquery.flexslider.js"></script>
-<script type="text/javascript">
-  $(window).load(function() {
-    $('.flexslider').flexslider();
-  });
-</script>
+	<script src="assets/js/jquery.flexslider.js"></script>
+	<script type="text/javascript">
+		$(window).load(function() {
+			$('.flexslider').flexslider();
+		});
+	</script>
 </style>
 </head>
 
 <body background="assets/img/ladrillo.jpg">
-<section id="nav">
-	
-</section>
+	<!-- sección NAV-->
+	<section id="nav">
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">Gásfiter experto</a>
+				</div>
 
-<section id="descripcion">
-	
-</section>
 
-<section id="trabajos">
-	
-</section>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#">¿Quiénes somos?</a></li>
+					<li><a href="#">Nuestros trabajos</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Servicios<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Gasfitería</a></li>
+							<li><a href="#">Construcción</a></li>
+							<li><a href="#">Electricidad</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="#">Separated link</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Contacto</a></li>
+				</ul>
 
-<section id="servicios">
-	
-</section>
+			</div><!-- /.container-fluid -->
+		</nav>
+	</section>
 
-<section id="contacto">
-	
-</section>
+	<section id="descripcion">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h1>¿Quiénes somos?</h1>
+					<p>Somos una empresa familiar, que cuenta con especialistas en el área de la construcción con más de 20 años de experiencia</p>
+				</div>
+			</div>
 
-<footer id="pie-pag">
-	
-</footer>
+			<div class="row">
+				<div class="col-md-6">
+					<h1>Misión</h1>
+					<p>Nuestra misión es entregar un servicio de calidad basados en nuetsros pilares de profesionalismo, seriedad, transparencia y confianza; a un precio justo y acorde al mercado.</p>
+				</div>
+
+				<div class="col-md-6">
+					<h1>Visión</h1>
+					<p>Nuestra misión es entregar un servicio de calidad basados en nuetsros pilares de profesionalismo, seriedad, transparencia y confianza; a un precio justo y acorde al mercado.</p>
+				</div>
+				
+			</div>
+		</div>
+	</section>
+
+	<section id="trabajos">
+	<h1>Nuestros trabajos</h1>
+
+	<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="assets/img/ladrillo.jpg" alt="Los Angeles">
+    </div>
+
+    <div class="item">
+      <img src="assets/img/ladrillo1.jpg" alt="Chicago">
+    </div>
+
+    <div class="item">
+      <img src="assets/img/beige-tiles.jpg" alt="New York">
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+	</section>
+
+	<section id="servicios">
+
+	</section>
+
+	<section id="contacto">
+
+	</section>
+
+	<footer id="pie-pag">
+
+	</footer>
 
 
 <!--<header>
@@ -106,7 +195,9 @@
 <strong><br>Mail: </strong> cstapiarubio@gmail.com </br>
 <strong>Teléfonos: </strong> 962769417/978005241</p>
 </footer> -->
-
+<!--CDN bootstrap js-->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!--js-->
 <script src="assets/js/main.js"></script>
 </body>
 </html>
