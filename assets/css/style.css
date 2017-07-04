@@ -36,7 +36,7 @@ nav a{
 
 /*Diseño de la descripción*/
 #descripcion{
-  padding-top: 50px;
+  padding-top: 80px;
   background-color:#B4B9BA;
 }
 
@@ -51,11 +51,23 @@ nav a{
   width: 400px;
   display:inline-block;
   padding: 20px;
+  margin-left: 150px;
+}
+
+#somos p{
+  margin-left: 150px;
 }
 
 /*Sección nuestros trabajos (carousel)*/
 #trabajos{
-  background-color: #459FDA;
+  background-color: #89E7F6;
+}
+
+#myCarousel img {
+   
+}
+
+#myCarousel{
 }
 
 h1{
@@ -64,13 +76,14 @@ h1{
 }
 
 .flex-caption p{
-  font-size: 169%;
+  font-size: 169%; 
+   background-color: #75A4AB; 
 }
 
 /*Sección servicios*/
 
 #servicios{
-  background-color:#738088;
+  background-color:#B4B9BA;
 }
 
 #servicios p, 
@@ -84,7 +97,7 @@ h1{
   width:95px;
   height:70px;
   border-radius:50%;
-  margin-left: 10px;
+  margin-left: 50px;
 }
 
 
@@ -94,12 +107,13 @@ h1{
   width: 250px;
   display:inline-block;
   padding: 20px;
+  margin-left: 150px;
 }
 
 /*Sección contacto*/
 
 #contacto{
-  background-color: #459FDA;
+  background-color: #89E7F6;
 }
 
 #contacto p{
@@ -107,11 +121,15 @@ h1{
   padding: 10px;
 }
 
+#contacto i{
+  margin-left: 180px;
+}
+
 #mail,
 #fono{
   width: 400px;
   display:inline-block;
-  padding: 20px;
+  margin-left: 200px;
 }
 
 
@@ -119,7 +137,7 @@ h1{
 
 #pie-pag
 {
-	background-color:#738088;
+	background-color:#B4B9BA;
   height: 80px;
 
 }
@@ -129,8 +147,4 @@ h1{
   text-align: center;
 }
 
-.text,
-.flex-caption p{
-	background-color: #EC8263;
-}
 
